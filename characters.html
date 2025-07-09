@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Characters</title>
+  
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Internal CSS for quick styling overrides or additions -->
+  <style>
+    body {
+      font-family: 'Bahnschrift SemiBold';
+    }
+    h1 {
+      color: rgb(255, 255, 255);
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .img-button {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s ease;
+    }
+    .img-button:hover {
+      border: 2px solid #007BFF;
+    }
+
+    /* Default button images */
+    .about {
+      background-image: url('h1.png');
+    }
+    .services {
+      background-image: url('c1.png');
+    }
+    .contact {
+      background-image: url('images/contact.png');
+    }
+
+    /* Hover images */
+    .about:hover {
+      background-image: url('h2.png');
+    }
+    .services:hover {
+      background-image: url('c2.png');
+    }
+    .contact:hover {
+      background-image: url('images/contact-hover.png');
+    }
+
+  </style>
+</head>
+<body>
+
+    <a href="index.html" class="button">Home</a>
+    <a href="Summary.html" class="button">Summary</a>
+
+  <header>
+    <h1>Characters Guide</h1>
+  </header>
+
+  <main>
+    Click the character icons to learn more about them!
+  </main>
+
+  <main>
+    <a href="hachiware.html" class="img-button about" title="hachiware"></a>
+    <a href="chiikawa.html" class="img-button services" title="chiikawa"></a>
+    <a href="monsters.html" class="img-button contact" title="monsters"></a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Stylish Co.</p>
+  </footer>
+</body>
+</html>
